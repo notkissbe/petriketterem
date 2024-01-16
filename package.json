@@ -14,5 +14,9 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.2"
-  }
+  },
+  "description": "Hello Laci!",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }
