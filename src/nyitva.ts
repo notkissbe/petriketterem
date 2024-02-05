@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded",async () => {
-    let eredmeny=await fetch('http://localhost:3000/nyitvatartas');
+    try{
+        let eredmeny=await fetch('http://localhost:3000/nyitvatartas');
+    }
+    catch{
+        alert("nincs kapcsolat a backend szerverrel")
+    }
     let kiir=await eredmeny.json();
 
     kiir.forEach((element: { nap: string; kezdo_idopont: string; veg_idopont: string; zarva: string; }) => {
